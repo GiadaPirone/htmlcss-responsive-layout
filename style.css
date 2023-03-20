@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bgBlu  {background-color: #0084FD ;}
+
+.flex   {display: flex;}
+.flexWrap   {flex-wrap: wrap;}
+
+.justifyCenter  {justify-content: center;}
+.justifyBetween {justify-content: space-between;}
+
+.alignCenter    {align-items: center;}
+
+.padding1em {padding: 1em;}
+
+
+/* HEADER. */
+
+/* NAV. */
+
+nav{
+    width: 100%;
+}
+
+.hamburger{
+    color: white;
+    font-size: 1.5em;
+}
+
+/* PRIMA SECTION. */
+
+.container{
+    width: 100%;
+    margin: 35px auto;
+    background-color: yellow; /* da togliere succ */
+}
+
+.box.strong{
+    min-height: 500px; /* da togliere succ */
+}
+
+.box{
+    width: 90%;
+    border-radius: 30px;
+    margin: 1em;
+    min-height: 300px; /* da togliere succ */
+    background-color: #B5DDFF;
+}
+
+/* QUERY PER TABLET */
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+
+    .container{
+        background-color: red;
+        flex-wrap: nowrap;
+    }
+
+    .box.strong{
+        width: calc(100% / 2);
+    }
+    
+}

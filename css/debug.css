@@ -1,0 +1,29 @@
+
+/* MEDIA QUERIES */
+/* MOBILE. */
+.debug{
+    background-color: red;
+}
+
+/* TABLET. */
+
+@media screen and (min-width: 780px) {
+    .debug{
+        background-color: orange;
+    }
+}
+
+/* pc. */
+
+@media screen and (min-width:1160px) {
+    .debug{
+        background-color:yellow;
+    }
+}
+
+
+
+
+
+
+

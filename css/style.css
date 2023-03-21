@@ -15,6 +15,8 @@
 .alignCenter    {align-items: center;}
 
 .padding1em {padding: 1em;}
+.paddingBottom   {padding-bottom: 1rem;}
+.paddingTopBottom   {padding: 1em 0px 1em 0px;}
 
 
 /* HEADER. */
@@ -30,13 +32,22 @@ nav{
     font-size: 1.5em;
 }
 
+.navDesck{
+    display: none;
+}
+
 /* PRIMA SECTION. */
 
 .container{
     width: 100%;
     margin: 35px auto;
-    background-color: yellow; /* da togliere succ */
+    /* background-color: yellow; da togliere succ */
     min-height: 500px; /* da togliere succ */
+}
+
+.phone{ 
+    width: 100%;
+    margin: 0px auto;
 }
 
 .box{
@@ -61,7 +72,14 @@ nav{
     min-height: 500px; /* da togliere succ */
 }
 
-/* MQ TABLET */
+/* MQ TABLET  navbar*/
+@media screen and (min-width: 780px) {
+    .navDesck{
+        display: none;
+    }
+}
+
+/* MQ TABLET  prima section*/
 
 @media screen and (min-width: 780px) {
     
@@ -80,5 +98,17 @@ nav{
 
     .box{
         width: calc(100% / 3);
+    }
+}
+
+/* MQ PC  NAVBAR*/
+
+@media screen and (min-width:1160px) {
+    .hamburger{
+        display: none;
+    }
+
+    .navDesck{
+        display: block;
     }
 }

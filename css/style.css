@@ -9,14 +9,16 @@
 .flex   {display: flex;}
 .flexWrap   {flex-wrap: wrap;}
 
+.directionColumn    {flex-direction: column;}
+
 .justifyCenter  {justify-content: center;}
 .justifyBetween {justify-content: space-between;}
 
 .alignCenter    {align-items: center;}
 
-.padding1em {padding: 1em;}
+.padding1em {padding: 1rem;}
 .paddingBottom   {padding-bottom: 1rem;}
-.paddingTopBottom   {padding: 1em 0px 1em 0px;}
+.paddingTopBottom   {padding: 1rem 0px 1rem 0px;}
 
 
 /* HEADER. */
@@ -41,8 +43,6 @@ nav{
 .container{
     width: 100%;
     margin: 35px auto;
-    /* background-color: yellow; da togliere succ */
-    min-height: 500px; /* da togliere succ */
 }
 
 .phone{ 
@@ -61,15 +61,11 @@ nav{
     background-color:#B5DDFF ;
     width: 100%;
     border-radius: 30px;
-    min-height: 300px; /* da togliere succ */
 }
 
-.card.strong{
-    min-height: 500px; /* da togliere succ */
-}
-
-.box.strong{
-    min-height: 500px; /* da togliere succ */
+.icona{
+    font-size: 120px;
+    color: #0084FD;
 }
 
 /* MQ TABLET  navbar*/
@@ -89,15 +85,19 @@ nav{
 
     .box.medium{
         width: 30%;
-        height: 500px;
+        min-height: 500px;
     }
 
-    .card.medium{
-        height: 500px;
+    .medium{
+        min-height: 500px;
     }
 
     .box{
         width: calc(100% / 3);
+    }
+
+    .phone{
+        width: 50%;
     }
 }
 
@@ -111,4 +111,32 @@ nav{
     .navDesck{
         display: block;
     }
+}
+
+/* MQ PC  PRIMA SECTION*/
+
+@media screen and (min-width:1160px) {
+    .phone{
+        width: 40%;
+    }
+    
+}
+
+
+/* SECONDA SECTION. */
+
+.planning{
+    border: solid 2px white;
+    width: 100%;
+    min-height: 300px;  /* da togliere succ */
+    background-color: purple;
+}
+.development{
+    background-color: white;
+    border-radius: 30px;
+    min-height: 300px;  /* da togliere succ */
+}
+
+.prova{
+    width: 90%;
 }
